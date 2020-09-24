@@ -1,0 +1,22 @@
+{
+  "name": "readNumber",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon app.js"
+  },
+  "description": "read number into Vietnamese text",
+  "main": "app.js",
+  "author": "dattran132003",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.9.0",
+    "eslint-plugin-ramda": "^2.5.1",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "ramda": "^0.27.1"
+  }
+}
