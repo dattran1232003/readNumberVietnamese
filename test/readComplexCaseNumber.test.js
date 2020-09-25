@@ -1,4 +1,4 @@
-const complexCaseHandler = require('../source/_readComplexCaseNumber')
+const complexCaseHandler = require('../source/readClass/_readComplexCaseNumber')
 
 const { _handle0, _handle1, _handle4, _handle5 } = complexCaseHandler
 const Pos = { Hund: 2, Tens: 1, Unit: 0 }
@@ -64,16 +64,16 @@ describe('read complex cases Number', () => {
     // Tens position
     expect(_handle5(Pos.Tens, {} )).toBe('năm')
     // Unit position
-    expect(_handle5(Pos.Unit, { previousNumber: '0' } )).toBe('lăm')
-    expect(_handle5(Pos.Unit, { previousNumber: '1' } )).toBe('năm')
-    expect(_handle5(Pos.Unit, { previousNumber: '2' } )).toBe('năm')
-    expect(_handle5(Pos.Unit, { previousNumber: '3' } )).toBe('năm')
-    expect(_handle5(Pos.Unit, { previousNumber: '4' } )).toBe('năm')
-    expect(_handle5(Pos.Unit, { previousNumber: '5' } )).toBe('năm')
-    expect(_handle5(Pos.Unit, { previousNumber: '6' } )).toBe('năm')
-    expect(_handle5(Pos.Unit, { previousNumber: '7' } )).toBe('năm')
-    expect(_handle5(Pos.Unit, { previousNumber: '8' } )).toBe('năm')
-    expect(_handle5(Pos.Unit, { previousNumber: '9' } )).toBe('năm')
+    expect(_handle5(Pos.Unit, { previousNumber: '0' } )).toBe('năm')
+    expect(_handle5(Pos.Unit, { previousNumber: '1' } )).toBe('lăm')
+    expect(_handle5(Pos.Unit, { previousNumber: '2' } )).toBe('lăm')
+    expect(_handle5(Pos.Unit, { previousNumber: '3' } )).toBe('lăm')
+    expect(_handle5(Pos.Unit, { previousNumber: '4' } )).toBe('lăm')
+    expect(_handle5(Pos.Unit, { previousNumber: '5' } )).toBe('lăm')
+    expect(_handle5(Pos.Unit, { previousNumber: '6' } )).toBe('lăm')
+    expect(_handle5(Pos.Unit, { previousNumber: '7' } )).toBe('lăm')
+    expect(_handle5(Pos.Unit, { previousNumber: '8' } )).toBe('lăm')
+    expect(_handle5(Pos.Unit, { previousNumber: '9' } )).toBe('lăm')
 
     return done()
   })

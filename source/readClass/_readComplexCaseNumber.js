@@ -15,7 +15,7 @@ const _handle1 = (position, { previousNumber='' }) =>
   isHundres(position) ? 'một' :
   isTens(position) ? 'mười' :
   isUnits(position) &&
-    ['0', '1'].includes(previousNumber) ? 'một' : 'mốt'
+    (['0', '1'].includes(previousNumber) ? 'một' : 'mốt')
 
 const _handle4 = (position, { previousNumber='' }) =>
   isHundres(position) || isTens(position) ? 'bốn' :
@@ -25,7 +25,7 @@ const _handle4 = (position, { previousNumber='' }) =>
 const _handle5 = (position, { previousNumber='' }) =>
   isHundres(position) || isTens(position) ? 'năm' :
   isUnits(position) &&
-    (previousNumber === '0' ? 'lăm' : 'năm')
+    ('0' === previousNumber ? 'năm' : 'lăm')
   
 module.exports = {
   _handle0,
