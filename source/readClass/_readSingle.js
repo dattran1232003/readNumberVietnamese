@@ -17,13 +17,13 @@ const complexConditions = {
   "0": complexCase._handle0,
   "1": complexCase._handle1,
   "4": complexCase._handle4,
-  "5": complexCase._handle5,
+  "5": complexCase._handle5
 }
 
 const readers = { ...simpleConditions, ...complexConditions }
 
 const readSingle = (number, posistion, otherNumbers={ previousNumber:"", followingNumber:"" }) => {
-  const readThatNumber = readers[number] || (_ => '') // or function which return the empty string
+  const readThatNumber = readers[number] || (_ => '') // or function which's return the empty string
   return readThatNumber(posistion, otherNumbers)
 }
 

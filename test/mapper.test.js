@@ -1,11 +1,11 @@
 const mapper = require('../source/readClass/mapper')
 
 describe('test mapper', () => {
-  const aClassNumber = ['1', '1', '2']
+  const aClassNumber = ['5', '2', '2']
   const readed = mapper(aClassNumber)
 
-  it('should is an array has 3 elements', done => {
-    expect(readed.length).toBe(3)
+  it('should read right', done => {
+    expect(readed).toBe('hai trăm hai mươi lăm ')
     return done()
   })
 })

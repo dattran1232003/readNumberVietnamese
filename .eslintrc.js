@@ -3,17 +3,22 @@ module.exports = {
     "browser": true,
     "commonjs": true,
     "es2020": true,
+    "es6": true,
     "node": true,
-    "jest": true
+    "jest": true,
   },
   "plugins": [
     'ramda'
   ],
-  "extends": "plugin:ramda/recommended",
+  "extends": [ 
+    "eslint:recommended",
+    "plugin:ramda/recommended",
+  ],
   "parserOptions": {
     "ecmaVersion": 12
   },
   "rules": {
+    "no-restricted-modules": ["error", "foo-module", "bar-module"],
     "ramda/always-simplification": "error",
     "ramda/any-pass-simplification": "error",
     "ramda/both-simplification": "error",
