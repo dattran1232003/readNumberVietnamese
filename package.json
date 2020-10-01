@@ -1,9 +1,10 @@
 {
   "name": "vietnamese-number",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "scripts": {
     "test": "jest"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "description": "read number into Vietnamese text",
   "main": "./source/index.js",
   "exports": {
@@ -13,7 +14,7 @@
       "default": "./source/index.js"
     }
   },
-  "author": "dattran132003",
+  "author": "dattran1232003",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^7.10.0",
