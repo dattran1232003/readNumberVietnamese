@@ -2,7 +2,7 @@ const isHundres = (position) => position === 2
 const isTens = (position) => position === 1
 const isUnits = (position) => position === 0
 
-const _handle0 = (position, { previousNumber='', followingNumber='' }) => 
+const _handle0 = (position, { followingNumber='' }) => 
   isHundres(position) ? 'không' :
   isTens(position) ? 
     (followingNumber === '0' ? '' : 'linh') : 

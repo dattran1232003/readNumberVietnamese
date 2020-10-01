@@ -13,7 +13,7 @@ describe('read complex cases Number', () => {
     // Unit position 
     expect(_handle0(Pos.Unit, { previousNumber: '0' } )).toBe('')
     expect(_handle0(Pos.Unit, { previousNumber: '1' } )).toBe('')
-    expect(_handle0(Pos.Unit, { previousNumber: '4' } )).toBe('mươi')
+    expect(_handle0(Pos.Unit, { previousNumber: '4' } )).toBe('')
 
     return done()
   })

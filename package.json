@@ -1,22 +1,27 @@
 {
-  "name": "readNumber",
-  "version": "0.0.1",
+  "name": "vietnamese-number",
+  "version": "0.1.7",
   "scripts": {
-    "test": "jest",
-    "start": "nodemon app.js"
+    "test": "jest"
   },
   "description": "read number into Vietnamese text",
-  "main": "app.js",
+  "main": "./source/index.js",
+  "exports": {
+    ".": {
+      "require": "./source/index.js",
+      "import": "./source/index.js",
+      "default": "./source/index.js"
+    }
+  },
   "author": "dattran132003",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.9.0",
+    "eslint": "^7.10.0",
     "eslint-plugin-ramda": "^2.5.1",
     "jest": "^26.4.2",
     "nodemon": "^2.0.4"
   },
   "dependencies": {
-    "express": "^4.17.1",
     "ramda": "^0.27.1"
   }
 }

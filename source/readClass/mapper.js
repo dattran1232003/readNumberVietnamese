@@ -13,7 +13,7 @@ module.exports = (arrNumber) => {
 
   // add sub to word and return
   return words
-    .map((number, position) => number + ' ' + subs[position])
+    .map((number, position) => `${number} ${subs[position]}`)
     .reverse()
     .join('')
 }

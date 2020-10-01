@@ -23,7 +23,8 @@ const complexConditions = {
 const readers = { ...simpleConditions, ...complexConditions }
 
 const readSingle = (number, posistion, otherNumbers={ previousNumber:"", followingNumber:"" }) => {
-  const readThatNumber = readers[number] || (_ => '') // or function which's return the empty string
+  // or function which's return the empty string
+  const readThatNumber = readers[number] || (() => '') 
   return readThatNumber(posistion, otherNumbers)
 }
 
