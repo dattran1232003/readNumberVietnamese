@@ -1,12 +1,16 @@
 {
   "name": "vietnamese-number",
-  "version": "0.2.0",
+  "version": "0.1.7",
   "scripts": {
     "test": "jest"
   },
   "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "description": "read number into Vietnamese text",
   "main": "./source/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dattran1232003/readNumberVietnamese"
+  },
   "exports": {
     ".": {
       "require": "./source/index.js",
