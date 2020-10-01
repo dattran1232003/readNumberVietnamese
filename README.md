@@ -1,6 +1,6 @@
 # vietnamese-number
 
-A simple function to read natural numbers into Vietnamese.
+A simple function to read natural numbers into Vietnamese. Light and performance!
 
 ## Installation
 
