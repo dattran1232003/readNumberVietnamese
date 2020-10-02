@@ -1,10 +1,13 @@
-const R = require('ramda')
+const pipe = require('ramda/src/pipe')
+const split = require('ramda/src/split')
+const reverse = require('ramda/src/reverse')
+const splitEvery = require('ramda/src/splitEvery')
 
 const toString = str => str.toString()
 
-module.exports = R.pipe(
+module.exports = pipe(
   toString,
-  R.reverse,
-  R.split(''),
-  R.splitEvery(3)
+  reverse,
+  split(''),
+  splitEvery(3)
 )

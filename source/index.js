@@ -1,15 +1,18 @@
-const R = require('ramda')
+const map = require('ramda/src/map')
+const pipe = require('ramda/src/pipe')
+const join = require('ramda/src/join')
+const flatten = require('ramda/src/flatten')
 
 const splitClass = require('./splitClass')
 const nameClass = require('./nameClass')
 const readClass = require('./readClass')
 
-const exportsFunc = R.pipe(
+const exportsFunc = pipe(
   splitClass,
-  R.map(readClass),
+  map(readClass),
   nameClass,
-  R.flatten,
-  R.join('')
+  flatten,
+  join('')
 )
 
 module.exports = exportsFunc

@@ -1,14 +1,12 @@
-const R = require('ramda')
-
-R.comp = R.compose
+const always = require('ramda/src/always')
 
 const simpleConditions = {
-  '2': R.always('hai'),
-  '3': R.always('ba'),
-  '6': R.always('sáu'),
-  '7': R.always('bảy'),
-  '8': R.always('tám'),
-  '9': R.always('chín')
+  '2': always('hai'),
+  '3': always('ba'),
+  '6': always('sáu'),
+  '7': always('bảy'),
+  '8': always('tám'),
+  '9': always('chín')
 }
 
 const complexCase = require('./_readComplexCaseNumber')
