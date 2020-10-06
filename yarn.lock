@@ -1436,6 +1436,11 @@ babel-plugin-dynamic-import-node@^2.3.3:
   dependencies:
     object.assign "^4.1.0"
 
+babel-plugin-import-export-rename@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-import-export-rename/-/babel-plugin-import-export-rename-1.0.1.tgz#194dc19bb79ac2598260a0b3a9a9278c99c77402"
+  integrity sha1-GU3Bm7eawlmCYKCzqaknjJnHdAI=
+
 babel-plugin-istanbul@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-6.0.0.tgz#e159ccdc9af95e0b570c75b4573b7c34d671d765"
@@ -1857,13 +1862,6 @@ core-util-is@1.0.2, core-util-is@~1.0.0:
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
   integrity sha1-tf1UIgqivFq1eqtxQMlAdUUDwac=
 
-create-eslint-index@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/create-eslint-index/-/create-eslint-index-1.0.0.tgz#d954372d86d5792fcd67e9f2b791b1ab162411bb"
-  integrity sha1-2VQ3LYbVeS/NZ+nyt5GxqxYkEbs=
-  dependencies:
-    lodash.get "^4.3.0"
-
 cross-env@^7.0.2:
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-7.0.2.tgz#bd5ed31339a93a3418ac4f3ca9ca3403082ae5f9"
@@ -2186,15 +2184,6 @@ escodegen@^1.14.1:
     optionator "^0.8.1"
   optionalDependencies:
     source-map "~0.6.1"
-
-eslint-plugin-ramda@^2.5.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ramda/-/eslint-plugin-ramda-2.5.1.tgz#36c2592300c383471aaac1ba26e9fca6f37a11b2"
-  integrity sha512-1Uuyl5hMiyBNsn1F0Px0q8hGX95HC6CAzaEBeKngwixXwsbw+j98U7fatxDME8lUKyLPXuO5Ulon2QOcwVDrxw==
-  dependencies:
-    create-eslint-index "^1.0.0"
-    ramda "0.25.0"
-    req-all "^1.0.0"
 
 eslint-scope@^5.1.1:
   version "5.1.1"
@@ -3712,11 +3701,6 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-lodash.get@^4.3.0:
-  version "4.4.2"
-  resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
-  integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
-
 lodash.sortby@^4.7.0:
   version "4.7.0"
   resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
@@ -4296,11 +4280,6 @@ qs@~6.5.2:
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
   integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
 
-ramda@0.25.0:
-  version "0.25.0"
-  resolved "https://registry.yarnpkg.com/ramda/-/ramda-0.25.0.tgz#8fdf68231cffa90bc2f9460390a0cb74a29b29a9"
-  integrity sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
-
 rc@^1.2.8:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
@@ -4453,11 +4432,6 @@ repeat-string@^1.6.1:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
   integrity sha1-jcrkcOHIirwtYA//Sndihtp15jc=
-
-req-all@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/req-all/-/req-all-1.0.0.tgz#d128569451c340b432409c656cf166260cd2628d"
-  integrity sha1-0ShWlFHDQLQyQJxlbPFmJgzSYo0=
 
 request-promise-core@1.1.4:
   version "1.1.4"
