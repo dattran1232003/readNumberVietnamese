@@ -25,7 +25,7 @@ const _handle5 = (position, { previousNumber='' }) =>
   isUnits(position) &&
     (['', '0'].includes(previousNumber) ? 'năm' : 'lăm')
   
-module.exports = {
+export default {
   _handle0,
   _handle1,
   _handle4,

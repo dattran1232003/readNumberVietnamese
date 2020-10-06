@@ -1,4 +1,4 @@
-const splitNumber = require('../source/splitClass')
+import splitNumber from '../source/splitClass'
 
 describe('Split number into array', () => {
   const input = '354123'

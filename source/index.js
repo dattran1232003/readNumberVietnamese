@@ -1,18 +1,15 @@
-const map = require('ramda/src/map')
-const pipe = require('ramda/src/pipe')
-const join = require('ramda/src/join')
-const flatten = require('ramda/src/flatten')
+import pureFns from './pureFunction'
+const { pipe, map, trim, join, flatten } = pureFns
 
-const splitClass = require('./splitClass')
-const nameClass = require('./nameClass')
-const readClass = require('./readClass')
+import splitClass from './splitClass/index'
+import nameClass from './nameClass/index'
+import readClass from './readClass/index'
 
-const exportsFunc = pipe(
+export default pipe(
   splitClass,
   map(readClass),
   nameClass,
   flatten,
-  join('')
+  join(''),
+  trim
 )
-
-module.exports = exportsFunc

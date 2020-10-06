@@ -1,3 +1,21 @@
 {
-  "presets" : ["@babel/preset-env"]
+  "presets" : ["@babel/preset-env"],
+  "plugins" : [
+  ],
+  "env": {
+    "cjs": {
+      "plugins": [
+        "annotate-pure-calls",
+        "./scripts/transpile/esm-to-cjs",
+        "./scripts/transpile/wrap-contructor-pattern"
+      ]
+    },
+    "ejs": {
+      "plugins": [
+        "annotate-pure-calls",
+        ["import-export-rename", {"^(.+?)(?:\\.m?js)?$": "$1.js"}],
+        "./scripts/transpile/wrap-contructor-pattern"
+      ]
+    }
+  }
 }

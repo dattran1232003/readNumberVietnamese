@@ -1,4 +1,6 @@
-const always = require('ramda/src/always')
+import complexCase from './_readComplexCaseNumber'
+
+const always = x => () => x
 
 const simpleConditions = {
   '2': always('hai'),
@@ -9,7 +11,6 @@ const simpleConditions = {
   '9': always('chín')
 }
 
-const complexCase = require('./_readComplexCaseNumber')
 
 const complexConditions = {
   "0": complexCase._handle0,
@@ -26,4 +27,4 @@ const readSingle = (number, posistion, otherNumbers={ previousNumber:"", followi
   return readThatNumber(posistion, otherNumbers)
 }
 
-module.exports = readSingle
+export default readSingle

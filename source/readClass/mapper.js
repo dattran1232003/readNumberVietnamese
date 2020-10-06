@@ -1,7 +1,7 @@
-const readSingle = require('./_readSingle')
-const createSub = require('./_addSubffixes')
+import readSingle from './_readSingle'
+import createSub from './_addSubffixes'
 
-module.exports = (arrNumber) => {
+export default (arrNumber) => {
   const words = arrNumber.map((number, position) => readSingle(
     number, position, {
       previousNumber: arrNumber[position + 1] || '',

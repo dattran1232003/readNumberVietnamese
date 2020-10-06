@@ -1,4 +1,4 @@
-const complexCaseHandler = require('../source/readClass/_readComplexCaseNumber')
+import complexCaseHandler from '../source/readClass/_readComplexCaseNumber'
 
 const { _handle0, _handle1, _handle4, _handle5 } = complexCaseHandler
 const Pos = { Hund: 2, Tens: 1, Unit: 0 }

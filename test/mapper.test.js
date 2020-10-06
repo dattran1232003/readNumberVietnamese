@@ -1,4 +1,4 @@
-const mapper = require('../source/readClass/mapper')
+import mapper from '../source/readClass/mapper'
 
 describe('test mapper', () => {
   const aClassNumber = ['5', '2', '2']

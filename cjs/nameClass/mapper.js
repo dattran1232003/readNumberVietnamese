@@ -12,12 +12,30 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-var R = require('ramda');
-
 var NAMES = [' ', 'nghìn ', 'triệu ', 'tỷ '];
 
+var take = function take(length, arr) {
+  return arr.slice(0, length);
+};
+
+var compose = function compose() {
+  for (var _len = arguments.length, fns = new Array(_len), _key = 0; _key < _len; _key++) {
+    fns[_key] = arguments[_key];
+  }
+
+  return function (x) {
+    return fns.reduceRight(function (v, f) {
+      return f(v);
+    }, x);
+  };
+};
+
+var length = function length(str) {
+  return str.length;
+};
+
 var nameStretched = function nameStretched(length) {
-  return length <= 4 ? R.take(length, NAMES) :
+  return length <= 4 ? take(length, NAMES) :
   /** otherwise */
   Array.from({
     length: length
@@ -28,7 +46,7 @@ var nameStretched = function nameStretched(length) {
   }, NAMES);
 };
 
-var createNameStretched = R.compose(nameStretched, R.length);
+var createNameStretched = /*#__PURE__*/compose(nameStretched, length);
 
 var crossConcat = function crossConcat(leftArr, rightArr) {
   return leftArr.map(function (val, index) {

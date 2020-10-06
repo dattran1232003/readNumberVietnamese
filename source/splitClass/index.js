@@ -1,13 +1,13 @@
-const pipe = require('ramda/src/pipe')
-const split = require('ramda/src/split')
-const reverse = require('ramda/src/reverse')
-const splitEvery = require('ramda/src/splitEvery')
+import pureFns from '../pureFunction'
+const { pipe, split, splitEvery, reverse } = pureFns
 
 const toString = str => str.toString()
 
-module.exports = pipe(
+const exportFunc = pipe(
   toString,
   reverse,
   split(''),
   splitEvery(3)
 )
+
+export default exportFunc 

@@ -1,9 +1,11 @@
-const R = require('ramda')
-
 const NAMES = [' ', 'nghìn ', 'triệu ', 'tỷ ']
 
+const take = (length, arr) => arr.slice(0, length)
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x)
+const length = str => str.length
+
 const nameStretched = length => {
-  return (length <= 4) ? R.take(length, NAMES) : 
+  return (length <= 4) ? take(length, NAMES) : 
   /** otherwise */ Array.from({ length })
     .reduce((accum, _, index) => 
       (index < 4) ? [...accum] : /** otherwise */
@@ -11,7 +13,7 @@ const nameStretched = length => {
     , NAMES)
 }
 
-const createNameStretched = R.compose(nameStretched, R.length)
+const createNameStretched = compose(nameStretched, length)
 const crossConcat = (leftArr, rightArr) => leftArr.map((val, index) => [val, rightArr[index]])
 
 
@@ -21,5 +23,5 @@ const toName = arrNumber => {
 }
 
 
-module.exports = toName
+export default toName
 
