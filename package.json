@@ -1,6 +1,6 @@
 {
   "name": "vietnamese-number",
-  "version": "0.3.12",
+  "version": "0.3.15",
   "scripts": {
     "test": "jest",
     "build": "yarn build:es && yarn build:cjs && yarn build:umd && yarn build:umd:min",
@@ -8,7 +8,7 @@
     "build:cjs": "cross-env BABEL_ENV=cjs babel source --out-dir cjs",
     "build:umd": "cross-env NODE_ENV=development rollup -c -o dist/vietnamese-number.js",
     "build:umd:min": "cross-env NODE_ENV=production rollup -c -o dist/vietnamese-number.min.js",
-    "clean": "rm -rf cjs/* dist/* "
+    "clean": "rm -rf cjs/* dist/*"
   },
   "main": "./cjs/index.js",
   "publishConfig": {
