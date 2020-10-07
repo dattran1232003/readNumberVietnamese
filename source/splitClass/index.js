@@ -1,4 +1,4 @@
-import pureFns from '../pureFunction'
+import pureFns from '../pureFunction.js'
 const { pipe, split, splitEvery, reverse } = pureFns
 
 const toString = str => str.toString()

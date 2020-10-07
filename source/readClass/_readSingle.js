@@ -1,4 +1,4 @@
-import complexCase from './_readComplexCaseNumber'
+import complexCase from './_readComplexCaseNumber.js'
 
 const always = x => () => x
 

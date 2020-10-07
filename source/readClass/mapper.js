@@ -1,5 +1,5 @@
-import readSingle from './_readSingle'
-import createSub from './_addSubffixes'
+import readSingle from './_readSingle.js'
+import createSub from './_addSubffixes.js'
 
 export default (arrNumber) => {
   const words = arrNumber.map((number, position) => readSingle(

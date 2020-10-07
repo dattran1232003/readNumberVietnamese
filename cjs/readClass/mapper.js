@@ -1,8 +1,8 @@
 "use strict";
 
-var readSingle = /*#__PURE__*/require("./_readSingle");
+var readSingle = /*#__PURE__*/require("./_readSingle.js");
 
-var createSub = /*#__PURE__*/require("./_addSubffixes");
+var createSub = /*#__PURE__*/require("./_addSubffixes.js");
 
 module.exports = function (arrNumber) {
   var words = arrNumber.map(function (number, position) {

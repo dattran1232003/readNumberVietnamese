@@ -1,6 +1,6 @@
 "use strict";
 
-var pureFns = /*#__PURE__*/require("../pureFunction");
+var pureFns = /*#__PURE__*/require("../pureFunction.js");
 
 var pipe = pureFns.pipe,
     split = pureFns.split,

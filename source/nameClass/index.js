@@ -1,2 +1,2 @@
-import mapper from './mapper'
+import mapper from './mapper.js'
 export default mapper
