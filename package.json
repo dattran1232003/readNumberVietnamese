@@ -1,6 +1,6 @@
 {
   "name": "vietnamese-number",
-  "version": "0.3.17",
+  "version": "1.0.0",
   "scripts": {
     "test": "jest",
     "build": "yarn build:es && yarn build:cjs && yarn build:umd && yarn build:umd:min",
