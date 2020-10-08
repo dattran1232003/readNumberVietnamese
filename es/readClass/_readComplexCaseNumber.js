@@ -48,3 +48,4 @@ var _default = {
   _handle5: _handle5
 };
 exports["default"] = _default;
+module.exports = exports.default;

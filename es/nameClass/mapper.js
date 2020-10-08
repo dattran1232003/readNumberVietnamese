@@ -66,3 +66,4 @@ var toName = function toName(arrNumber) {
 
 var _default = toName;
 exports["default"] = _default;
+module.exports = exports.default;

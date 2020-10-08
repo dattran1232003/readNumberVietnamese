@@ -1,4 +1,4 @@
-import readNumber from '../source'
+import readNumber from '../es'
 
 test('readNumber final result', done => {
   const number = '123921'

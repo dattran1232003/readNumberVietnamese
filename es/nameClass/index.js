@@ -11,3 +11,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var _default = _mapper["default"];
 exports["default"] = _default;
+module.exports = exports.default;

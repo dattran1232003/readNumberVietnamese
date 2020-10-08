@@ -54,3 +54,4 @@ var readSingle = function readSingle(number, posistion) {
 
 var _default = readSingle;
 exports["default"] = _default;
+module.exports = exports.default;

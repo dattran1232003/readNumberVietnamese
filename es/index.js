@@ -24,3 +24,4 @@ var pipe = _pureFunction["default"].pipe,
 var _default = /*#__PURE__*/pipe(_index["default"], /*#__PURE__*/map(_index3["default"]), _index2["default"], flatten, /*#__PURE__*/join(''), trim);
 
 exports["default"] = _default;
+module.exports = exports.default;

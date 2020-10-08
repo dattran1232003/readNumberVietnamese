@@ -21,3 +21,4 @@ var _default = function _default(arrNumber) {
 };
 
 exports["default"] = _default;
+module.exports = exports.default;

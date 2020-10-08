@@ -81,3 +81,4 @@ var dependentFns = {
 var _default = /*#__PURE__*/_objectSpread( /*#__PURE__*/_objectSpread({}, reuseFns), dependentFns);
 
 exports["default"] = _default;
+module.exports = exports.default;

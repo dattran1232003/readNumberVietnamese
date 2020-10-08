@@ -13,6 +13,7 @@
     "es": {
       "plugins": [
         "annotate-pure-calls",
+        "babel-plugin-add-module-exports",
         ["import-export-rename", {"^(.+?)(?:\\.m?js)?$": "$1.js"}],
         "./scripts/transpile/wrap-contructor-pattern"
       ]

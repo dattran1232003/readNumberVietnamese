@@ -21,3 +21,4 @@ var toString = function toString(str) {
 var exportFunc = /*#__PURE__*/pipe(toString, reverse, /*#__PURE__*/split(''), /*#__PURE__*/splitEvery(3));
 var _default = exportFunc;
 exports["default"] = _default;
+module.exports = exports.default;
